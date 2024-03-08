@@ -1,6 +1,70 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     
+}
+:root{
+    --font-padrao: "Open Sans", sans-serif;
+}
+body{
+    font-family: var(--font-padrao);
+    background-color: black;
+}
+.cabeçalho{
+    background-color: #C4170C;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "titulo search";
+    height: 100px;
+}
+h1{
+    grid-area: titulo;
+    color: white ;
+    justify-self: end;
+    text-align: center;
+}
+#isearch{
+    background-color: #A7140A;
+    color: white;
+    text-indent: 5px;
+   grid-area: search;
+   max-width: 150px;
+   margin-top: 30px;
+   margin-right:80px;
+   border: none;
+   height: 35px;
+   justify-self: end;;
+
+}
+::placeholder{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .cabeçalho{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "titulo search ";
+    }
+    h1{
+        justify-self: center;
+        margin-left: 200px;
+    }
+    #isearch{
+    
+    }
+    body{
+        background-color: black;
+    }
+}
+main{
+    max-width: 600px;
+    background-color: white;
+    margin: auto;
 }
