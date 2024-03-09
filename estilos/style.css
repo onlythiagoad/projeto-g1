@@ -19,9 +19,10 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "titulo search";
-    height: 100px;
+    height: 70px;
 }
 h1{
+    margin-top: 10px;
     grid-area: titulo;
     color: white ;
     justify-self: end;
@@ -56,15 +57,72 @@ h1{
         justify-self: center;
         margin-left: 200px;
     }
-    #isearch{
-    
-    }
     body{
         background-color: black;
     }
 }
-main{
-    max-width: 600px;
+.principal{
+    display: grid;
+    grid-template-columns: 1fr minmax(600px, 800px) 1fr;
+    grid-template-areas: 
+    "sidenav content noticias"
+    "sidenav content noticias"
+    "footer footer footer";
+}
+.principal > main{
+    
     background-color: white;
-    margin: auto;
+    justify-self: center;
+}
+h2{
+    color: #A7140A;
+    text-align: justify;
+    text-indent: 10px;
+    padding: 10px;
+}
+p{
+    text-align: justify;
+    padding: 5px;
+}
+#by{
+    font-size: 14px;
+}
+span{
+    font-size: 12px;
+}
+mark#lais{
+    background-color: transparent;
+    color: #C91747;
+    font-weight: bold;
+}
+/*======== BOTOES =========*/
+.social{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+}
+.botoes{
+    background-color: #F5F6F7;
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+}
+.botoes img{
+    width: 50px;
+    margin-left: 25%;
+}
+.wts:hover{
+    background-color: #1FCD60;
+    color: white;
+}
+/*=================================*/
+/* =================AREA DE NOTICIAS============== */
+.noticias{
+    grid-area: noticias;
+    max-width: 300px;
+    
+}
+.sidenav{
+    grid-area: sidenav;
 }
