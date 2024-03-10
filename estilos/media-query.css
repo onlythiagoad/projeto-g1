@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@media screen and (min-width:400px) and (max-width: 992px){
+    .principal{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "sidenav"
+        "content"
+        "noticias";
+    }
+    .sidenav{
+        font-size: 12px;
+
+    }
+    fieldset img{
+        margin-left: 19%;
+    }
+}
