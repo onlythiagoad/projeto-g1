@@ -40,7 +40,9 @@ h1{
    margin-right:80px;
    border: none;
    height: 35px;
-   justify-self: end;;
+   justify-self: end;
+   border-radius: 10px;
+
 
 }
 ::placeholder{

@@ -1,11 +1,26 @@
 @charset "UTF-8";
 @media screen and (min-width:400px) and (max-width: 992px){
+    .cabeçalho h1{
+        justify-self: end;
+        transform: translate(50%, 0%);
+        font-size: 1.8em;
+    }
+    #isearch{
+        transform: translate(50%, 9%);
+        border-radius: 10px;
+    }
     .principal{
         grid-template-columns: auto;
         grid-template-areas: 
         "sidenav"
         "content"
         "noticias";
+    }
+    .p-margin{
+        font-size: 1em;
+    }
+    .anotaçao p{
+        font-size: .9em;
     }
     .sidenav{
         font-size: 12px;
