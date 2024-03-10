@@ -112,8 +112,10 @@ mark#lais{
     width: 50px;
     margin-left: 25%;
 }
+
 .wts:hover{
-    background-color: #1FCD60;
+    background-color: #1fcd5f54;
+    color: white;
     color: white;
 }
 /*=================================*/
