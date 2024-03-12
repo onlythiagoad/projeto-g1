@@ -11,7 +11,7 @@
         border-radius: 10px;
     }
     .principal{
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         grid-template-areas: 
         "sidenav"
         "content"
