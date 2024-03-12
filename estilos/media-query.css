@@ -1,8 +1,13 @@
 @charset "UTF-8";
 @media screen  and (max-width:768px){
     /* ======CABEÇALHO===== */
+    .cabeçalho{
+        grid-template-columns: 1fr;
+        width: 97vw;
+    }
     .cabeçalho h1{
         justify-self: end;
+        text-align: center;
         transform: translate(50%, 0%);
         font-size: 1.8em;
     }
