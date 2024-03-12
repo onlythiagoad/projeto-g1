@@ -75,6 +75,10 @@
     .cabeçalho{
        justify-items:  start;
     }
+    .cabeçalho h1{
+        justify-self: center;
+        margin-left: 40%;
+    }
     .cabeçalho #isearch {
        justify-self: end;
        
