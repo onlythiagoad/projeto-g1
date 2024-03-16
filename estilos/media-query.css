@@ -3,7 +3,7 @@
     /* ======CABEÇALHO===== */
     .cabeçalho{
         grid-template-columns: 1fr;
-        width: 97vw;
+
     }
     .cabeçalho h1{
         justify-self: end;
